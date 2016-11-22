@@ -1,0 +1,659 @@
+@import '_settings'
+
+/* Custom CSS*/
+
+body
+  font 15px/1.6 $roboto !important
+
+.container
+  max-width  1205px
+  width  100%
+
+.slider
+  background-repeat no-repeat
+  background-position center top
+  width 100%
+  height 600px
+  position relative
+  text-align left
+  padding-top 25px
+  .slider-heading
+      position relative
+      font-weight 100
+      font-size 60px
+      color #fff !important
+      margin-top 200px
+      margin-bottom 10px
+      svg
+          position absolute
+          top 4px
+          margin-left -16px
+          path
+              stroke-width 2px
+  .slider-subheading
+      position relative
+      font-weight 300
+      color #fff
+      margin 0px
+      svg
+          position absolute
+          top 15px
+      .sub-heading-text
+          padding-top 10px
+
+.slider-navigator
+  position fixed
+  top 25%
+  left 0px
+  z-index 1
+  ul
+    padding 0px
+  a
+    display block
+    border 1px solid #ffffff
+    border-radius 50px
+    margin 20px
+    &.hvr-ripple-out:before
+      border-radius 50px
+
+
+
+
+.head-bg
+  position relative
+
+#svg_menu
+  max-width 59px
+  margin-top -17px
+  stroke-width 4px
+  z-index -1
+  path
+    stroke-width 2px !important
+
+
+#svg_menu path
+    stroke-width 1.5px
+    stroke #48c1f9
+
+
+.hided
+    opacity 0
+
+.showed
+    opacity 1
+
+.drawsvg
+    -webkit-transition opacity 1.25s ease-in-out
+    -moz-transition opacity 1.25s ease-in-out
+    -ms-transition opacity 1.25s ease-in-out
+    -o-transition opacity 1.25s ease-in-out
+    transition opacity 1.25s ease-in-out
+
+.drawsvg_line
+    position absolute
+    max-width 100%
+    z-index 10
+    top 0
+    left 50%
+    -webkit-transform translateX(-50%)
+    transform translateX(-50%)
+
+
+h3, h4 ,h5
+  line-height:1.8
+
+.hr-line
+  border-top:1px solid #03a9f4
+  display:block
+  margin-top:25px
+  margin-bottom:25px
+
+.heading-1
+  font-size 54px
+  font-weight 100
+
+.heading-3
+  font-weight 300
+  margin-top 10px
+  line-height 1.1
+
+.heading-2
+  font-weight 300
+  font-size 34px
+
+
+.med-text
+  font-weight 500 !important
+  line-height 1.2
+
+.light-text
+  font-weight 300 !important
+
+.thin-text
+  font-weight 100 !important
+
+.navy-text
+  color #039be5 !important
+
+.space-auto
+  margin: 0 auto;
+  float: none;
+
+.gray-section
+  padding 50px 0px
+
+.svg-wrapper
+  position:relative
+  width:210px
+  line-height:0
+  height:57px
+  svg
+    width:100%
+    line-height:0
+    position:absolute
+    top:0px
+  p
+    position:absolute
+    top:9px
+    a
+      border:none
+
+// #page
+//   display: none
+
+// #loading
+//   display: block
+//   position: absolute
+//   top: 0
+//   left: 0
+//   z-index: 100
+//   width: 100vw
+//   height: 100vh
+//   background-color: rgba(192, 192, 192, 0.5)
+//   background-image: url("/img/puff.svg")
+//   background-repeat: no-repeat
+//   background-position: center
+
+
+@keyframes draw {
+  from {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -450;
+    stroke-width: 3px;
+  }
+  to {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover path
+  -webkit-animation: 0.5s draw linear forwards
+  animation: 0.5s draw linear forwards
+  stroke: #039be5
+
+.animate-earth-small, .animate-earth-large
+  opacity 0
+  transform translateY(50px)
+  -webkit-transform translateY(50px)
+
+.svg-earth-pattern
+  padding-top 55px
+  img
+      position absolute
+      margin-top 90px
+      left 50%
+      top 40%
+      transform translate(-50%, -50%)
+      -webkit-transform translate(-50%, -50%)
+
+.fs-navigation-lock
+  .main-wrapper
+    .container
+      max-width 100%
+
+nav.nav_offscreen .navbar-nav li
+  width:100%
+
+nav.nav_offscreen .navbar-nav li a
+  color:#fff
+  background-color:transparent !important
+  font-weight: 300
+  font-size 23px
+  text-transform uppercase
+
+
+
+nav.nav_offscreen .navbar-nav li:hover a
+  color:#039be5
+
+nav.nav_offscreen.js-navigation
+  background-color:#222
+
+// .fs-navigation-open.fs-navigation-push-right-content::before
+//   content:""
+//   top:0px
+//   height:100%
+//   width:100%
+//   position:absolute
+//   z-index:2
+//   background-color: rgba(3, 169, 244, 0.5)
+
+.fs-light.fs-navigation-handle.fs-navigation-enabled
+  height: 40px
+  position: absolute
+  top: 0px
+  font-size: 0px
+  background-image: none
+  background-color: transparent
+  border: none
+  width: 100%
+  outline: none
+  opacity:0
+
+
+nav.nav_offscreen .nav
+  display:none
+
+
+
+nav.nav_offscreen.fs-navigation-push-right-nav.fs-navigation-enabled.fs-navigation-open .nav
+  display:block
+
+.header-menu .pull-right
+  position:relative
+  width:35px
+  height:40px
+
+.social-media ul li
+  display inline-block
+  margin-right 5px
+
+.main-menu ul
+  clear:both
+
+
+
+/* Icon 1 */
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4
+  top:0px
+  z-index:-1
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4
+  width: 35px
+  height: 40px
+  line-height:0
+  position: absolute
+  margin: 0px auto
+  -webkit-transform: rotate(0deg)
+  -moz-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg)
+  -webkit-transition: .5s ease-in-out
+  -moz-transition: .5s ease-in-out
+  -o-transition: .5s ease-in-out
+  transition: .5s ease-in-out
+  cursor: pointer
+
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span
+  display: block
+  position: absolute
+  height: 4px
+  line-height:0
+  width: 100%
+  background: #fff
+  border-radius: 9px
+  opacity: 1
+  left: 0
+  -webkit-transform: rotate(0deg)
+  -moz-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg)
+  -webkit-transition: .25s ease-in-out
+  -moz-transition: .25s ease-in-out
+  -o-transition: .25s ease-in-out
+  transition: .25s ease-in-out
+
+
+#nav-icon1 span:nth-child(1)
+  top: 0px
+
+
+#nav-icon1 span:nth-child(2)
+  top: 10px
+
+
+#nav-icon1 span:nth-child(3)
+  top: 20px
+
+
+#nav-icon1.open span:nth-child(1)
+  top: 13px
+  -webkit-transform: rotate(135deg)
+  -moz-transform: rotate(135deg)
+  -o-transform: rotate(135deg)
+  transform: rotate(135deg)
+
+
+#nav-icon1.open span:nth-child(2)
+  opacity: 0
+  left: -60px
+
+
+#nav-icon1.open span:nth-child(3)
+  top: 13px
+  -webkit-transform: rotate(-135deg)
+  -moz-transform: rotate(-135deg)
+  -o-transform: rotate(-135deg)
+  transform: rotate(-135deg)
+
+@-webkit-keyframes tringle{
+  0%{fill:transparent;}
+  50%{fill:rgb(3, 169, 244);}
+}
+
+@-webkit-keyframes dash{
+  0%{stroke-dashoffset: 800;}
+  100%{stroke-dashoffset: 0;}
+}
+
+#web-services
+  background: #191a1f url(../img/trend-bg.jpg) no-repeat center top
+  // background  #0288d1 url(../img/builtinbg.jpg)no-repeat center top
+  background-size cover
+  position relative
+  .container
+    .row
+      .hr-line
+        border-color: #1d1e23;
+      h3
+        color #000000
+      h4, p
+        color #5f5f5f
+      .col-right
+        &.in-view
+          #phone
+            path
+              stroke-dasharray 2000
+              stroke-dashoffset 0
+              animation iphone_dash 1s linear forwards
+              -webkit-animation iphone_dash 1s linear forwards
+        #modern-tech
+          opacity 0
+          text-align center
+          position relative
+          height 650px
+          #phone, img.modern
+            max-width 100%
+            opacity 0
+            position absolute
+            right 0
+            left 0
+            margin 0px auto
+          img.modern
+            top -20px
+      .col-left
+        .row
+          img
+            opacity 0
+
+
+@-webkit-keyframes iphone_dash{
+  0%{stroke-dashoffset: 2000;}
+  100%{stroke-dashoffset: 0;}
+}
+
+
+#web-services-commerce
+  background  #667784 url(../img/ecommerce-bg.jpg) no-repeat center center
+  background-size cover
+
+  .container
+    .row
+      .heading-1
+        color #e3e3e3 !important
+      h3
+        color #ffffff
+      h4, p
+        color #d0d0d0
+      .hr-line
+        border-color #ffffff
+      .col-left, .col-right
+        margin-top 90px
+      .col-middle
+        &.in-view
+          svg#tablet path
+            stroke-dasharray: 2000;
+            stroke-dashoffset: 0;
+            animation: iphone_dash 1s linear forwards;
+            -webkit-animation: iphone_dash 1s linear forwards;
+        .col
+          position relative
+          height 649px
+          text-align center
+          svg#tablet, img.tablet
+            max-width 100%
+            opacity 0
+            position absolute
+            right 0
+            left 0
+            margin 0 auto
+          img.tablet
+            top 0px
+          .services-icons
+            position absolute
+            z-index 1
+            width 380px
+            left 40px
+            right 30px
+            top 22%
+            margin 0px auto
+            ul
+              padding 0px
+              list-style none
+              li
+                opacity 0
+                display inline-block
+                width 174px
+                padding 35px 5px
+                background-color #29b6f6
+                margin 4px
+    .responsive-web
+      .resp-learnmore
+        padding 0px
+        position absolute
+        top 19px
+        left 0px
+        right 0px
+        text-align center
+        ul
+          padding 0px
+          margin-bottom 0px
+          li
+            display inline-block
+            padding-left 22px
+            padding-right 22px
+            &:first-child
+              border-right 1px solid #ffffff
+              padding-right 23px
+            a
+              border-radius 100px
+              border 1px solid #ffffff
+              padding 10px
+              background-color transparent !important
+              &.hvr-ripple-out:before
+                border-radius 100px
+                border-color #ffffff
+
+
+
+
+
+
+#projects
+  background #02b1ff url(../img/portfolio-bg.jpg) no-repeat center center
+  background-size cover
+  .container
+    .row
+      h1, h4
+        color #ffffff !important
+      .hr-line
+        border-color #ffffff
+      .col-md-4
+        padding 5px
+        .hovereffect
+          border:5px solid #f6f6f6
+
+
+#contact-us
+  background-color #f0f0f0
+  .row
+    ul.presentation-list
+      li
+        border 2px solid #ddd
+        border-radius 5px
+        -webkit-border-radius 5px
+        -moz-border-radius 5px
+        margin-right 10px
+        display inline-block
+        padding 0px
+        a
+          display block
+          padding 3px 13px
+    ul
+      padding 0px
+      li
+        a
+          color #757575
+          font-size 13px
+          line-height 2rem
+          padding 0px
+    .office
+      .eq-ui-collapsible
+        box-shadow none
+        -webkit-box-shadow none
+        border none
+        li
+          .eq-ui-collapsible-header
+            background-color #f0f0f0
+            height auto
+            line-height 2.5rem
+            font-size 15px
+          .eq-ui-collapsible-body-inner
+            a
+              padding 0px
+    .newsletter
+      #mc_embed_signup
+        #mc-embedded-subscribe
+          border none
+          background none
+          padding 0px
+          text-transform  uppercase
+          color #333
+          
+#web-servicess::before
+    content  ""
+    position  absolute
+    right  0
+    left  0
+    margin  0 auto
+    background  url(../img/dotte-lines.svg) no-repeat center top
+    width  20px
+    z-index 1
+
+
+body .head-bg::after
+    bottom  0
+    height  30px
+    background-position  center top
+
+#web-services::before
+  top  0
+  height  50px
+  background-position  center bottom
+
+@keyframes hvr-ripple-out
+{
+    100%
+    {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+
+        opacity: 0;
+    }
+}
+.hvr-ripple-out
+    position relative
+    display inline-block
+    transform translateZ(0)
+    vertical-align middle
+    box-shadow 0 0 1px rgba(0, 0, 0, 0)
+    -webkit-backface-visibility hidden
+    backface-visibility hidden
+    -moz-osx-font-smoothing grayscale
+
+.hvr-ripple-out
+    &:before
+        position absolute
+        top 0
+        right 0
+        bottom 0
+        left 0
+        content ''
+        animation-duration 1s
+        opacity 0
+        border #ffffff solid 2px
+        border-radius 35px
+    &.white
+        &:before
+            border-color #fff
+
+.hvr-ripple-out:hover:before,
+.hvr-ripple-out:focus:before,
+.hvr-ripple-out:active:before,
+.active.hvr-ripple-out:before
+    animation-name hvr-ripple-out
+    animation-iteration-count infinite
+    opacity 1
+
+.hvr-float-shadow
+    position relative
+    display inline-block
+    transition-duration .75s
+    transition-property transform
+    transform translateZ(0)
+    vertical-align middle
+    box-shadow 0 0 1px rgba(0, 0, 0, 0)
+    -webkit-backface-visibility hidden
+    backface-visibility hidden
+    -moz-osx-font-smoothing grayscale
+    &:before
+        position absolute
+        z-index -1
+        top 100%
+        left 5%
+        width 90%
+        height 10px
+        content ''
+        transition-duration .75s
+        transition-property transform, opacity
+        pointer-events none
+        opacity 0
+        background radial-gradient(ellipse at center, rgba(0, 0, 0, .35) 0%, rgba(0, 0, 0, 0) 80%)
+
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active
+    transform translateY(-15px)
+
+.hvr-float-shadow:hover:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before
+    transform translateY(5px)
+    opacity 1
+

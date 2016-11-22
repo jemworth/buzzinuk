@@ -1,0 +1,18 @@
+#newsletter.newslettersec
+  .container
+    .row
+      .col-md-12.blog-right.sm-mt.slide-bottom
+        .newsletter
+          h2.title-border Join Newsletter
+          p.mb-30
+            | Subcribes to our newsletter by entering your email below to keep updated to our latest news and information.
+          #mc_embed_signup.button-primary
+            form#mc-embedded-subscribe-form.validate.eq-ui-input.validate(action='//webfactories.us3.list-manage.com/subscribe/post?u=8cb5583254702490f52f894ff&id=f81bd08495', method='post', name='mc-embedded-subscribe-form', novalidate='', target='_blank')
+              .eq-ui-form-group.eq-ui-input-field
+                input#email_val.eq-ui-input.validate(name='EMAIL', required='', type='email', value='')
+                label(for='email_val', data-error='wrong', data-success='right') Email
+              div(style='position: absolute; left: -5000px;')
+                input(name='b_8cb5583254702490f52f894ff_f81bd08495', type='text', value='')
+              .clear
+                .eq-ui-form-group.eq-ui-input-field.form-btn
+                  input#mc-embedded-subscribe.button.btn.btn-primary.eq-ui-waves-light(name='subscribe', type='submit', value='Subscribe')

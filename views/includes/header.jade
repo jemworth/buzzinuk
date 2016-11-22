@@ -1,9 +1,37 @@
 if _path == "/index.html"
-	header
-		div.header-content
-			div.header-content-inner
-				h1 WEBRIQ CMS STARTER TEMPLATE
-				hr
-				p A modern responsive front-end framework based on<br> Bootstrap CSS framework!
+	#anim-head
+		#header-cover2.header-cover(data-parallax="scroll" data-image-src="../img/slider-background-v2.jpg")
+				.slider-background
+					.svg-earth-pattern
+						img.animate-earth-small(src='img/slider-earth-pattern-small.png')
+						img.animate-earth-large(src='img/slider-earth-pattern-large.png')
+				.slider
+					.container
+						.col-md-12.space-auto
+							h1.slider-heading.text-center
+								svg#slider-header.drawsvg_line.drawsvg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='715px', height='58px', viewbox='0 0 715 58', enable-background='new 0 0 715 58', xml:space='preserve')
+									g(fill='none', stroke='#32bef9', stroke-width='2', stroke-miterlimit='10')
+										path(d='M9.563,56.758C4.834,56.758,1,51.05,1,44.013V13.747\
+										C1,6.707,4.834,1,9.563,1')
+										path(d='M425.516,1h279.92C710.165,1,714,6.707,714,13.747\
+										v30.266c0,7.037-3.835,12.745-8.564,12.745H474.042')
+										path(d='M9.563,1h131.208h284.745')
+										path(d='M474.042,56.758H198.576H9.563')
+
+								.heading-text.drawsvg.hided.thin-text(data-svg='slider-header') Unique Web & Digital Marketing Platform
+							h4.slider-subheading.text-center
+								svg#slider_subheading.drawsvg_line.drawsvg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='290px', height='22px', viewbox='0 0 290 22', enable-background='new 0 0 290 22', xml:space='preserve')
+									g(fill='none', stroke='#32bef9', stroke-width='2', stroke-miterlimit='10')
+										path(d='M6.048,20c-2.209,0-4-1.791-4-4V6.502 c0-2.209,1.791-4,4-4')
+										path(d='M200.334,2.502H284c2.209,0,4,1.791,4,4V16 c0,2.209-1.791,4-4,4h-61')
+										path(d='M6.048,2.502h61.285h133')
+										path(d='M223,20H94.333H6.048')
+
+								.sub-heading-text.drawsvg.hided(data-svg='slider_subheading') for entrepreneurs & marketeers
 
 
+
+							//- div.scroll-btn-anim2
+							//- 	a#TrendssecBtn.trendsbtn(href='#')
+							//- 		div.scroll-btn-anim
+							//- 			| &nbsp;

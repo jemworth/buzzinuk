@@ -1,0 +1,127 @@
+doctype html
+html
+
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    //- uncomment if your site is responsive!
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    meta(name='description', content= records.site.sitedata[0].metadesc)
+    meta(name='author', content= records.site.sitedata[0].metauthor)
+    meta(name="keywords" content= records.site.sitedata[0].metakeyword)
+
+    title= records.site.sitedata[0].sitename
+
+    link(rel="icon", href= records.site.sitedata[0].icon, type="image/*")
+    link(rel="shortcut icon", href= records.site.sitedata[0].icon, type="img/*")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='../css/jasny-bootstrap.min.css')
+    link(rel='stylesheet', href='../css/webriq-bootstrap-material-ui.css')
+    link(rel='stylesheet', href='../css/custom.css')
+    link(rel='stylesheet', href='../css/master.css')
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+    <!-- Custom CSS -->
+
+
+  body#page-top.general.custom
+    header
+
+      if _path === "/pricing.html"
+        include includes/navbar_pricing
+
+      else
+
+        include includes/navbar_general
+    .main-wrapper
+      .header-menu
+        include includes/menu_pricing
+
+      section#custom
+
+        if _path === "/bots-are-the-new-apps.html"
+          include includes/header_bots
+
+        if _path === "/static-websites.html"
+          include includes/header_static
+
+        if _path === "/responsive-e-commerce-platform.html"
+          include includes/header_ecomm
+
+        if _path === "/partners.html"
+          include includes/header_partners
+
+        if _path === "/pricing.html"
+          include includes/header_pricing
+
+      div.main-container
+        block content
+
+      footer
+        include includes/footer
+
+    #myModal.modal.fade(tabindex='-1')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal') ×
+            h4#myModalLabel.modal-title Webfactories - Pages Pricing
+          .modal-body
+            // Begin MailChimp Signup Form
+            #mc_embed_signup
+              form#mc-embedded-subscribe-form-2.validate(action='//webfactories.us10.list-manage.com/subscribe/post?u=d60988bc77e93d3ea0ddf6358&id=e4c0cc6be4', method='post', name='mc-embedded-subscribe-form', novalidate='', target='_blank')
+                #mc_embed_signup_scroll
+                  .indicates-required
+                    span.asterisk *
+                    |  indicates required
+                  .mc-field-group
+                    label(for='mce-FNAME')
+                      | Full Name:
+                      span.asterisk *
+                    input#mce-FNAME.required(name='FNAME', type='text', value='')
+                  .mc-field-group
+                    label(for='mce-EMAIL')
+                      | Email Address:
+                      span.asterisk *
+                    input#mce-EMAIL.required.email(name='EMAIL', type='email', value='')
+                  #mce-responses.clear  
+                  // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  div(style='position: absolute; left: -5000px;')
+                    input(tabindex='-1', name='b_d60988bc77e93d3ea0ddf6358_e4c0cc6be4', type='text', value='')
+                  .clear
+                    input#mc-embedded-subscribe.button(name='subscribe', type='submit', value='Get A Quote')
+
+    #myModal2.modal.fade(tabindex='-1')
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal') ×
+                h4#myModalLabel.modal-title Webfactories - Shops Pricing
+              .modal-body
+                // Begin MailChimp Signup Form
+                #mc_embed_signup
+                  form#mc-embedded-subscribe-form-2.validate(action='//webfactories.us10.list-manage.com/subscribe/post?u=d60988bc77e93d3ea0ddf6358&id=b4dc1a1fd6', method='post', name='mc-embedded-subscribe-form', novalidate='', target='_blank')
+                    #mc_embed_signup_scroll
+                      .indicates-required
+                        span.asterisk *
+                        |  indicates required
+                      .mc-field-group
+                        label(for='mce-FNAME')
+                          | Full Name:
+                          span.asterisk *
+                        input#mce-FNAME.required(name='FNAME', type='text', value='')
+                      .mc-field-group
+                        label(for='mce-EMAIL')
+                          | Email Address:
+                          span.asterisk *
+                        input#mce-EMAIL.required.email(name='EMAIL', type='email', value='')
+                      #mce-responses.clear  
+                      // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                      div(style='position: absolute; left: -5000px;')
+                        input(tabindex='-1', name='b_d60988bc77e93d3ea0ddf6358_b4dc1a1fd6', type='text', value='')
+                      .clear
+                        input#mc-embedded-subscribe.button(name='subscribe', type='submit', value='Get A Quote')
+                // End mc_embed_signup
+                // End mc_embed_signup
+              // .modal-body

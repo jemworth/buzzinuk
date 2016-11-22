@@ -1,0 +1,40 @@
+<svg version="1.1" id="color" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="50px" height="80px" viewBox="0 0 20 80" style="enable-background:new 0 0 20 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#80D8FF;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:#00B0FF;}
+	.st2{fill:none;stroke:url(#SVGID_1_);stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:url(#SVGID_2_);stroke-linecap:square;stroke-miterlimit:10;stroke-dasharray:2,6;}
+
+</style>
+<g>
+	<circle class="st0" cx="10" cy="70.614" r="6.035">
+			<animate attributeName="stroke" values="#EEEEEE; #80D8FF; #00B0FF; #EEEEEE" dur="2s" repeatCount="indefinite"/>
+	</circle>
+
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="10" y1="2.458" x2="10" y2="31.7002" gradientTransform="matrix(1 0 0 1 -9.765625e-004 31.4414)">
+		<stop  offset="0%" style="stop-color:#80D8FF">
+			<animate attributeName="stop-color" values="#EEEEEE; #80D8FF; #00B0FF; #EEEEEE" dur="2s" repeatCount="indefinite"/>
+		</stop>
+		<stop  offset="100%" style="stop-color:#00B0FF">
+			<animate attributeName="stop-color" values="#EEEEEE; #00B0FF; #80D8FF; #EEEEEE;" dur="2s" repeatCount="indefinite"/>
+		</stop>
+
+	</linearGradient>
+	<line class="st2" x1="9.999" y1="34.399" x2="9.999" y2="62.642"/>
+
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="10" y1="34.2349" x2="10" y2="64.0972" gradientTransform="matrix(-1 0 0 -1 20 63.5977)">
+		<stop  offset="0%" style="stop-color:#80D8FF">
+			<animate attributeName="stop-color" values="#EEEEEE; #80D8FF; #00B0FF; #EEEEEE;" dur="2s" repeatCount="indefinite"/>
+		</stop>
+		<stop  offset="100%" style="stop-color:#00B0FF">
+			<animate attributeName="stop-color" values="#EEEEEE; #00B0FF; #80D8FF; #EEEEEE;" dur="2s" repeatCount="indefinite"/>
+		</stop>
+	</linearGradient>
+	<line class="st3" x1="10" y1="28.863" x2="10" y2="0"/>
+	<circle class="st1" cx="10.001" cy="70.614" r="3.456">
+		<animate attributeName="fill" values="#EEEEEE; #00B0FF; #80D8FF; #EEEEEE" dur="2s" repeatCount="indefinite"/>
+	</circle>
+</g>
+
+</svg>
