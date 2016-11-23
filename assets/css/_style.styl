@@ -170,7 +170,7 @@ h3, h4 ,h5
 //   width: 100vw
 //   height: 100vh
 //   background-color: rgba(192, 192, 192, 0.5)
-//   background-image: url("/img/puff.svg")
+//   background-image: url("/img/b.svg")
 //   background-repeat: no-repeat
 //   background-position: center
 
@@ -410,12 +410,56 @@ nav.nav_offscreen.fs-navigation-push-right-nav.fs-navigation-enabled.fs-navigati
   background  #0288d1 url(../img/builtinbg.jpg)no-repeat center top
   background-size cover
   position relative
+  .row
+    .col-md-4
+      .lead-boxes
+        opacity 0
+        transition 0.2s ease-in-out
+        -webkit-transition 0.2s ease-in-out
+        &.in-view
+          opacity 1
+          path
+            stroke-dasharray  800
+            stroke-dashoffset  0
+            animation  servdash 4s linear forwards
+            -webkit-animation  servdash 4s linear forwards
+            &.circle
+              fill transparent
+              animation  circle 4.5s ease forwards
+              -webkit-animation  circle 4.5s ease forwards
+
+      h3
+        margin-bottom 10px
+      ul.list-services
+        padding-left 0px
+        li::before
+          content  ""
+          width 15px
+          height 11px
+          float left
+          margin-right 7px
+          margin-top 6px
+          background  url(../img/checked.png) no-repeat center center
+
+@-webkit-keyframes servdash{
+  from{stroke-dashoffset: 800;}
+  to{stroke-dashoffset: 0;}
+}
+
+@-webkit-keyframes circle {
+  from {
+    fill:transparent;
+  }
+  to {
+    fill:#02A8F3;
+  }
+}
 
 
 #franchise
   background  #667784 url(../img/ecommerce-bg.jpg) no-repeat center center
   background-size cover
-
+  position relative
   .container
     .row
       .heading-1
@@ -517,8 +561,16 @@ nav.nav_offscreen.fs-navigation-push-right-nav.fs-navigation-enabled.fs-navigati
           padding 0px
           text-transform  uppercase
           color #333
-          
-#half-grid::before
+
+#half-grid::before,
+#half-grid::after,
+.head-bg::after,
+#trendssec::before,
+#trendssec::after,
+#web-services::before,
+#web-services::after,
+#web-services-commerce::before,
+#web-services-commerce::after
     content  ""
     position  absolute
     right  0
@@ -529,12 +581,22 @@ nav.nav_offscreen.fs-navigation-push-right-nav.fs-navigation-enabled.fs-navigati
     z-index 1
 
 
-body .head-bg::after
+body .head-bg::after,
+#half-grid::after,
+#web-services::after
     bottom  0
     height  30px
     background-position  center top
 
-#half-grid::before
+#web-services-commerce::after
+  height 80px
+  bottom 60px
+
+
+
+#half-grid::before,
+#web-services::before,
+#web-services-commerce::before
   top  0
   height  50px
   background-position  center bottom

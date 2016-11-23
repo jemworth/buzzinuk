@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $("[id*='Btn']").stop(true).on('click',function(e) {
     e.preventDefault();
@@ -66,14 +65,14 @@ $(document).ready(function(){
 $(window).on('scroll', function() {
     var scrolled = $(this).scrollTop();
 
-    $('.boxes, #half-grid .col-left, #half-grid .col-right, #web-services-commerce .col-middle').filter(function() {
+    $('.boxes, #half-grid .col-left, #half-grid .col-right, #web-services-commerce .col-middle, .lead-boxes').filter(function() {
       return scrolled >= $(this).offset().top-400;
     }).addClass('in-view').each(function(){
       $(this).trigger('classChange');
     })
 });
 
-$('.boxes, #half-grid .col-left, #half-grid .col-right, #web-services-commerce .col-middle').on('classChange', function(e){
+$('.boxes, #half-grid .col-left, #half-grid .col-right, #web-services-commerce .col-middle, .lead-boxes').on('classChange', function(e){
 
   TweenMax.staggerFromTo('#web-services-commerce .col-middle.in-view', 1, {opacity: 0},{opacity:1}, 0.2);
   TweenMax.staggerFromTo('#web-services-commerce .col-middle.in-view svg', 1, {opacity: 1, delay:1},{opacity:0, delay:1}, 0.2);
@@ -132,5 +131,4 @@ document.addEventListener('DOMContentLoaded', function(event) {
 cookieChoices.showCookieConsentBar('Cookies help us deliver our services. By using our services, you agree to our use of cookies.',
 'Got it', 'learn more', '/cookies');
 });
-
 
