@@ -2,14 +2,14 @@ extends layout
 
 block content
 
-  #web-services.gray-section
+  #half-grid.gray-section
     .container.responsive-web
       .row
         .col-sm-6.col-md-6.col-left
           .row.mb-30
             .col-md-12
               h1.navy-text.heading-1 Unique Customer Approach
-          .row.mb-10
+          .row
             .col-md-12
               p.light-text
                 | Today’s small businesses have more web and digital marketing options then ever before. Analytics are ever more powerful, automation is ever far reaching, and targeting is ever more precise. With that power has come increasing complexity and confusion for a lot of companies, especially for SME’s.
@@ -17,11 +17,17 @@ block content
             .col-md-12
               p.light-text
                 | Together we make the marketing job less lonely.  With a set of well-defined Templates we plan and deliver
+              ul#unique-approach-list.circle-check-blue.light-text.p-0
+                li Web and Digital Marketing Strategy
+                li Build-up of all digital assets
+                li Analyze and track all digital assets over the entire service period
+                li Recommend enhanced web and digital marketing strategies to further grow the business and the customer base
+
         .col-md-1
-        .col-sm-6.col-md-5.col-right.mb-50
+        .col-sm-6.col-md-5.col-right.mb-50.mt-50
           #modern-tech
             svg#phone(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='345px', height='667.093px', viewbox='0 0 345 667.093', enable-background='new 0 0 345 667.093', xml:space='preserve')
-              g(fill='none', stroke='#000000', stroke-width='1.5', stroke-miterlimit='10')
+              g(fill='none', stroke='#ffffff', stroke-width='1.5', stroke-miterlimit='10')
                 path(d='M179.316,44.951\
                 c-1.344,3.326-5.129,4.934-8.458,3.59c-3.324-1.344-4.932-5.129-3.588-8.456c1.342-3.326,5.129-4.933,8.457-3.59\
                 C179.053,37.84,180.66,41.625,179.316,44.951z')
@@ -40,7 +46,7 @@ block content
                 h-61.035c-0.404,0-0.732,0.508-0.732,1.136l0,0c0,0.627,0.328,1.136,0.732,1.136h61.035C205.453,63.63,205.781,63.12,205.781,62.494L205.781,62.494z')
                 path(d='M319.195,575.517H28.912V79.974h290.283V575.517L319.195,575.517z')
                 path(d='M194.297,608.976c0,11.182-9.064,20.244-20.244,20.244s-20.242-9.063-20.242-20.244c0-11.18,9.063-20.242,20.242-20.242C185.232,588.734,194.297,597.796,194.297,608.976z')
-                path(fill='none', stroke='#000000', stroke-width='1.5', stroke-miterlimit='10', d='M198.421,608.976c0,13.457-10.909,24.367-24.366,24.367c-13.458,0-24.368-10.91-24.368-24.367s10.909-24.365,24.368-24.365\
+                path(fill='none', stroke='#ffffff', stroke-width='1.5', stroke-miterlimit='10', d='M198.421,608.976c0,13.457-10.909,24.367-24.366,24.367c-13.458,0-24.368-10.91-24.368-24.367s10.909-24.365,24.368-24.365\
                 C187.512,584.609,198.421,595.519,198.421,608.976z')
                 path(d='M326.58,592.509l4.094,1v-6.824l-4.094-1V592.509z')
                 path(d='M21.575,585.685l-4.094,1v6.824l4.094-1V585.685z')
@@ -56,8 +62,17 @@ block content
                 c8.068-7.306,19.738-8.096,19.738-8.096h120.928h121.343c0,0,13.065,0.216,22.271,9.421c8.875,8.875,9.83,22.679,9.83,22.679')
                 path(d='M326.736,605.879c0,0-0.955,13.804-9.83,22.679\
                 c-9.205,9.206-22.271,9.422-22.271,9.422H173.293H52.365c0,0-11.669-0.79-19.738-8.096c-8.19-7.417-11.053-18.146-11.053-18.146')
-            img.modern.img-responsive(src='../img/web-services-responsive-website.png')
+            img.modern.img-responsive(src='../img/statistics-responsive.png')
 
+  #web-services.gray-section
+    .container
+      h1.heading-1.text-center Our Buzzin Services
+
+      .row
+        .col-md-12.responsive-web
+          div.resp-learnmore
+            a.hvr-ripple-out(href='/static-websites')
+              img.img-responsive(src="../img/plus-icon-blue.png")
 
   #web-services-commerce.gray-section
     .container.web-services-commerce.mt-30.mb-10

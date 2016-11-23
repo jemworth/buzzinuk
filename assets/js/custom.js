@@ -66,24 +66,24 @@ $(document).ready(function(){
 $(window).on('scroll', function() {
     var scrolled = $(this).scrollTop();
 
-    $('.boxes, #web-services .col-left, #web-services .col-right, #web-services-commerce .col-middle').filter(function() {
+    $('.boxes, #half-grid .col-left, #half-grid .col-right, #web-services-commerce .col-middle').filter(function() {
       return scrolled >= $(this).offset().top-400;
     }).addClass('in-view').each(function(){
       $(this).trigger('classChange');
     })
 });
 
-$('.boxes, #web-services .col-left, #web-services .col-right, #web-services-commerce .col-middle').on('classChange', function(e){
+$('.boxes, #half-grid .col-left, #half-grid .col-right, #web-services-commerce .col-middle').on('classChange', function(e){
 
   TweenMax.staggerFromTo('#web-services-commerce .col-middle.in-view', 1, {opacity: 0},{opacity:1}, 0.2);
   TweenMax.staggerFromTo('#web-services-commerce .col-middle.in-view svg', 1, {opacity: 1, delay:1},{opacity:0, delay:1}, 0.2);
   TweenMax.staggerFromTo('#web-services-commerce .col-middle.in-view img.tablet', 1, {opacity: 0}, {opacity: 1, delay:1}, 0.2);
   TweenMax.staggerFromTo('#web-services-commerce .col-middle.in-view .services-icons li', 1, {opacity: 0, scale:0.5}, {ease:Back.EaseInOut, scale:1, opacity: 1, delay:1, force3D:true}, 0.2);
   TweenMax.staggerFromTo('#web-services-commerce .col-middle.in-view .services-icons li', 1, {opacity: 0, scale:0.5}, {ease:Back.EaseInOut, scale:1, opacity: 1, delay:1, force3D:true}, 0.2);
-  TweenMax.staggerFromTo('#web-services .col-left.in-view .row img', 1, {opacity: 0},{opacity:1}, 0.2);
-  TweenMax.staggerFromTo('#web-services .col-right.in-view #modern-tech', 1, {opacity: 0},{opacity:1}, 0.2);
-  TweenMax.staggerFromTo('#web-services .col-right.in-view #modern-tech svg', 1, {opacity: 1, delay:1},{opacity:0, delay:1}, 0.2);
-  TweenMax.staggerFromTo('#web-services .col-right.in-view #modern-tech .modern', 1, {opacity: 0}, {opacity: 1, delay:1}, 0.2);
+  TweenMax.staggerFromTo('#half-grid .col-left.in-view .row img', 1, {opacity: 0},{opacity:1}, 0.2);
+  TweenMax.staggerFromTo('#half-grid .col-right.in-view #modern-tech', 1, {opacity: 0},{opacity:1}, 0.2);
+  TweenMax.staggerFromTo('#half-grid .col-right.in-view #modern-tech svg', 1, {opacity: 1, delay:1},{opacity:0, delay:1}, 0.2);
+  TweenMax.staggerFromTo('#half-grid .col-right.in-view #modern-tech .modern', 1, {opacity: 0}, {opacity: 1, delay:1}, 0.2);
 
   $(this).off(e);
 });
