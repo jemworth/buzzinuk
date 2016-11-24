@@ -148,7 +148,7 @@ body{padding-left:0px !important;}
 }
 
 .blog-footer a{
-  padding: 8px 60px;
+  padding: 5px 55px;
   color:#00b4ff !important;
   border:2px solid #00b4ff;
   border-radius:30px;
@@ -160,6 +160,7 @@ body{padding-left:0px !important;}
 }
 
 .blog-footer a:before{
+  
   border:2px solid #00b4ff;
 }
 
