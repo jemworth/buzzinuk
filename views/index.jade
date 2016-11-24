@@ -153,9 +153,27 @@ block content
         .col-md-7.space-auto
           h4.light-text We are looking to expand our Buzzin and Webfactories presence throughout the United Kingdom
       .row
-        .col-md-5
-        .col-md-7
-            #crmWebToEntityForm.form-div(style='margin: auto;')
+        .col-md-5.col-sm-5.partner-icons
+          .row
+
+            .col-md-12.mt-50.mb-50
+              .icon-holder
+                img(src='../img/online-ads.svg')
+              .icon-text
+                h3.light-text.white-text Online Advertising
+            .col-md-12.mb-50
+              .icon-holder
+                img(src='../img/e-commerce.svg')
+              .icon-text
+                h3.light-text.white-text Web and E-commerce Services 
+            .col-md-12.mb-50
+              .icon-holder
+                img(src='../img/digital-marketing.svg')
+              .icon-text
+                h3.light-text.white-text Digital Online
+
+        .col-md-7.col-sm-7
+            #crmWebToEntityForm.form-div.mt-30(style='margin: auto;')
               meta(http-equiv='content-type', content='text/html;charset=UTF-8')
               form(action='https://crm.zoho.com/crm/WebToLeadForm', name='WebToLeads493666000001258001', method='POST', onsubmit='javascript:document.charset="UTF-8"; return checkMandatory()', accept-charset='UTF-8')
                 // Do not remove this code.
@@ -167,34 +185,34 @@ block content
                 // Do not remove this code.
                 .zoho-form
                     .form-holder
-                      h3.white-text Request Partnership Info
-                    .form-holder
-                      .form-label.f1
+                      h3.light-text.white-text Request Partnership Info
+                    .form-holder.form-left
+                      .form-label
                         | Full Name
                         span(style='color:red;') *
                       .form-input
                         input(style='width: 250px;', maxlength='80', name='Last Name', type='text')
-                    .form-holder
-                      .form-label.f1
+                    .form-holder.form-right
+                      .form-label
                         | Company Name
                         span(style='color:red;') *
                       .form-input
                         input(style='width: 250px;', maxlength='100', name='Company', type='text')
-                    .form-holder
+                    .form-holder.form-left
                       .form-label Company Location
                       .form-input
                         input(style='width: 250px;', maxlength='30', name='Country', type='text')
-                    .form-holder
+                    .form-holder.form-right
                       .form-label Size of the Company
                       .form-input
                         input(style='width: 250px;', maxlength='9', name='No of Employees', type='text')
-                    .form-holder
+                    .form-holder.form-left
                       .form-label
                         | Email Address
                         span(style='color: red;') *
                       .form-input
                         input(style='width: 250px;', maxlength='100', name='Email', type='text')
-                    .form-holder
+                    .form-holder.form-right
                       .form-label Telephone Number
                       .form-input
                         input(style='width: 250px;', maxlength='30', name='Phone', type='text')
@@ -214,10 +232,10 @@ block content
                         | What are your challenges as a web service provider
                       .form-input
                         input(style='width: 250px;', maxlength='20', name='LEADCF2', type='text')
-                    .form-holder
-                      a.btn.btn-primary.eq-ui-waves-light
+                    .form-holder.btn-holder
+                      a.btn-submit
                         input(type='submit', value='Submit')
-                      a.btn.btn-primary.eq-ui-waves-light
+                      a.btn-reset
                         input(type='reset', value='Reset')
                 script.
                   var mndFileds=new Array('Company','Last Name','Email','Website');
@@ -259,4 +277,3 @@ block content
                   }
                   }
                   }
-
